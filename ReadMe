@@ -1,0 +1,41 @@
+This is an initial PoC for Gatling Performance Testing. 
+
+Performance Testing
+Types of performance testing we are planning to achieve. As we will be dealing with Http Request, we mostly will be dealing with a single API at a time. Considering that, the following test scenarios for each API can be proposed
+
+    Step Load Test - This is when rampup option is used to add users to the system at a specific interval and exit at a specific interval
+    Spike Test - This is when suddenly a load (users) are added to the system
+    Soak/Endurance Test - This is when a constant production load is subjected on to the system
+
+Before subjecting the system to such tests, we may need the following prerequisites to be completed
+    Recommendation & selection of tool for load generation & test creation
+    Ready to use performance test environment (this should be a copy of the production environment)
+    Test creation & benchmarking of different API requests
+
+As the points 2 & 3 will be taken care of post-workshop, the analysis part for the recommendation of a tool has been completed. Following are the observations for the same. 
+
+Gatling
+
+Installation Steps
+    Install IntelliJ IDE & Gatling and enable Scala plugin
+    Import Gatling archetype from the maven repository
+    Create a Load Test
+    Create a Maven project using the above archetype
+    Update Scala SDK in the IDE (if prompted)
+    Following is the framework structure
+    Run Engine.scala class
+    Post test execution, test report is created
+
+Observations
+    GUI available only for recording UI flows, will not be useful in our test scenario
+    HTML reports created after every test execution
+    Simulation log file is captured
+    Every test needs to be scripted in scala
+    Time consuming as multiple scala objects & classes need to be created for running a single HTTP request
+    No visual representation of the type of performance test like load test or spike test
+    All test configurations need to configured through code
+    Learning curve present in terms of Scala & performance configuration settings
+
+
+ 
+ 
