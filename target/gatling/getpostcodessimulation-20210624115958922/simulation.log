@@ -1,0 +1,5 @@
+ASSERTION	AAEDAAECAwAAAAAAAIizQA==
+RUN	simulations.GetPostcodesSimulation	getpostcodessimulation	1624535998922	 	3.6.0
+USER	Get postcodes scenario	START	1624536002119
+REQUEST		Get Postcodes	1624536002136	1624536005379	OK	 
+USER	Get postcodes scenario	END	1624536005394

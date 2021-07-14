@@ -1,0 +1,5 @@
+ASSERTION	AAEDAAECAwAAAAAAAIizQA==
+RUN	simulations.GetPostcodesSimulation	getpostcodessimulation	1624535412150	 	3.6.0
+ERROR	Get Postcodes: Failed to build request: Resource /src/test/resources/bodies/GetPostcodes.json not found 	1624535414771
+USER	Get postcodes scenario	START	1624535414761
+USER	Get postcodes scenario	END	1624535414774

@@ -1,0 +1,5 @@
+ASSERTION	AAEDAAECAwAAAAAAAIizQA==
+RUN	simulations.GetPostcodesSimulation	getpostcodessimulation	1624535922474	 	3.6.0
+USER	Get postcodes scenario	START	1624535924965
+REQUEST		Get Postcodes	1624535924983	1624535928548	KO	status.find.is(200), but actually found 400
+USER	Get postcodes scenario	END	1624535928572
